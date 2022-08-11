@@ -1,0 +1,403 @@
+2022-08-06 17:56:32|34885|INFO|ytopt:46] 
+
+Loading ytopt
+--------------
+2022-08-06 17:56:32|34885|INFO|ytopt.evaluator.subprocess_evaluator:102] Subprocess Evaluator will execute myobj() from module problem
+2022-08-06 17:56:32|34885|INFO|ytopt.search.search:51] Options: {'cache_key': None, 'evaluator': 'subprocess', 'problem': 'problem.Problem'}
+2022-08-06 17:56:32|34885|INFO|ytopt.search.search:52] Hyperparameter space definition: Configuration space object:
+  Hyperparameters:
+    p0, Type: UniformInteger, Range: [1, 64], Default: 8
+    p1, Type: Ordinal, Sequence: {0, 64, 128, 192, 256}, Default: 0
+    p2, Type: Ordinal, Sequence: {0, 64, 128, 192, 256}, Default: 0
+    p3, Type: Ordinal, Sequence: {0, 64, 128 , 192, 256}, Default: 0
+    p4, Type: Ordinal, Sequence: {128, 192, 256, 384, 512, 768, 1024}, Default: 512
+    p5, Type: Ordinal, Sequence: {128, 192, 256, 384, 512, 768, 1024}, Default: 512
+    p6, Type: Ordinal, Sequence: {128, 192, 256, 384, 512, 768, 1024}, Default: 512
+
+2022-08-06 17:56:32|34885|INFO|ytopt.search.search:53] Created "subprocess" evaluator
+2022-08-06 17:56:32|34885|INFO|ytopt.search.search:54] Evaluator: num_workers is 1
+2022-08-06 17:56:32|34885|INFO|ytopt.search.hps.ambs:47] Initializing AMBS
+2022-08-06 17:56:32|34885|INFO|ytopt.search.hps.optimizer.optimizer:66] Using skopt.Optimizer with RF base_estimator
+2022-08-06 17:56:32|34885|INFO|ytopt.search.hps.ambs:98] Generating 1 initial points...
+2022-08-06 17:56:33|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 13, 'p1': '192', 'p2': '192', 'p3': '192', 'p4': '512', 'p5': '512', 'p6': '768'}
+2022-08-06 17:56:33|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:00:0.00
+2022-08-06 18:03:33|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 13, "p1": "192", "p2": "192", "p3": "192", "p4": "512", "p5": "512", "p6": "768"} --> -47.583899222517466
+2022-08-06 18:03:33|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 13, 'p1': '192', 'p2': '192', 'p3': '192', 'p4': '512', 'p5': '512', 'p6': '768'} y: -47.583899222517466
+2022-08-06 18:03:33|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:03:33|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 13, 'p1': '192', 'p2': '192', 'p3': '192', 'p4': '512', 'p5': '512', 'p6': '768'} --> (13, '192', '192', '192', '512', '512', '768'): evaluated objective: -47.583899222517466
+2022-08-06 18:03:33|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:03:33|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [28, '192', '128', '0', '768', '384', '192'] lie: -47.583899222517466
+2022-08-06 18:03:33|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 28, 'p1': '192', 'p2': '128', 'p3': '0', 'p4': '768', 'p5': '384', 'p6': '192'}
+2022-08-06 18:03:35|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:07:2.47
+2022-08-06 18:10:33|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 28, "p1": "192", "p2": "128", "p3": "0", "p4": "768", "p5": "384", "p6": "192"} --> -47.88076846900376
+2022-08-06 18:10:33|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 28, 'p1': '192', 'p2': '128', 'p3': '0', 'p4': '768', 'p5': '384', 'p6': '192'} y: -47.88076846900376
+2022-08-06 18:10:33|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:10:33|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 28, 'p1': '192', 'p2': '128', 'p3': '0', 'p4': '768', 'p5': '384', 'p6': '192'} --> (28, '192', '128', '0', '768', '384', '192'): evaluated objective: -47.88076846900376
+2022-08-06 18:10:33|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:10:34|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [10, '256', '64', '128 ', '128', '384', '768'] lie: -47.583899222517466
+2022-08-06 18:10:34|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 10, 'p1': '256', 'p2': '64', 'p3': '128 ', 'p4': '128', 'p5': '384', 'p6': '768'}
+2022-08-06 18:10:34|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:14:1.43
+2022-08-06 18:18:43|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 10, "p1": "256", "p2": "64", "p3": "128 ", "p4": "128", "p5": "384", "p6": "768"} --> -31.455337974107085
+2022-08-06 18:18:43|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 10, 'p1': '256', 'p2': '64', 'p3': '128 ', 'p4': '128', 'p5': '384', 'p6': '768'} y: -31.455337974107085
+2022-08-06 18:18:43|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:18:43|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 10, 'p1': '256', 'p2': '64', 'p3': '128 ', 'p4': '128', 'p5': '384', 'p6': '768'} --> (10, '256', '64', '128 ', '128', '384', '768'): evaluated objective: -31.455337974107085
+2022-08-06 18:18:43|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:18:44|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [60, '0', '0', '0', '384', '384', '384'] lie: -31.455337974107085
+2022-08-06 18:18:44|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 60, 'p1': '0', 'p2': '0', 'p3': '0', 'p4': '384', 'p5': '384', 'p6': '384'}
+2022-08-06 18:18:44|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:22:11.76
+2022-08-06 18:27:51|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 60, "p1": "0", "p2": "0", "p3": "0", "p4": "384", "p5": "384", "p6": "384"} --> -36.033686093307495
+2022-08-06 18:27:51|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 60, 'p1': '0', 'p2': '0', 'p3': '0', 'p4': '384', 'p5': '384', 'p6': '384'} y: -36.033686093307495
+2022-08-06 18:27:51|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:27:51|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 60, 'p1': '0', 'p2': '0', 'p3': '0', 'p4': '384', 'p5': '384', 'p6': '384'} --> (60, '0', '0', '0', '384', '384', '384'): evaluated objective: -36.033686093307495
+2022-08-06 18:27:52|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:27:53|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [40, '64', '128', '64', '512', '384', '768'] lie: -31.455337974107085
+2022-08-06 18:27:53|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 40, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '384', 'p6': '768'}
+2022-08-06 18:27:53|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:31:19.94
+2022-08-06 18:35:23|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 40, "p1": "64", "p2": "128", "p3": "64", "p4": "512", "p5": "384", "p6": "768"} --> -45.04378610024222
+2022-08-06 18:35:23|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 40, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '384', 'p6': '768'} y: -45.04378610024222
+2022-08-06 18:35:23|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:35:23|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 40, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '384', 'p6': '768'} --> (40, '64', '128', '64', '512', '384', '768'): evaluated objective: -45.04378610024222
+2022-08-06 18:35:23|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:35:24|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [36, '128', '256', '128 ', '384', '128', '192'] lie: -31.455337974107085
+2022-08-06 18:35:24|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 36, 'p1': '128', 'p2': '256', 'p3': '128 ', 'p4': '384', 'p5': '128', 'p6': '192'}
+2022-08-06 18:35:24|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:38:51.84
+2022-08-06 18:42:38|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 36, "p1": "128", "p2": "256", "p3": "128 ", "p4": "384", "p5": "128", "p6": "192"} --> -46.97823552273611
+2022-08-06 18:42:38|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 36, 'p1': '128', 'p2': '256', 'p3': '128 ', 'p4': '384', 'p5': '128', 'p6': '192'} y: -46.97823552273611
+2022-08-06 18:42:38|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:42:38|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 36, 'p1': '128', 'p2': '256', 'p3': '128 ', 'p4': '384', 'p5': '128', 'p6': '192'} --> (36, '128', '256', '128 ', '384', '128', '192'): evaluated objective: -46.97823552273611
+2022-08-06 18:42:39|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:42:40|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '64', '128', '64', '128', '192', '512'] lie: -31.455337974107085
+2022-08-06 18:42:40|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '128', 'p5': '192', 'p6': '512'}
+2022-08-06 18:42:40|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:46:7.45
+2022-08-06 18:49:44|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "64", "p2": "128", "p3": "64", "p4": "128", "p5": "192", "p6": "512"} --> -46.16192476608746
+2022-08-06 18:49:44|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '128', 'p5': '192', 'p6': '512'} y: -46.16192476608746
+2022-08-06 18:49:44|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 18:49:44|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '128', 'p5': '192', 'p6': '512'} --> (12, '64', '128', '64', '128', '192', '512'): evaluated objective: -46.16192476608746
+2022-08-06 18:49:45|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 18:49:46|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [1, '64', '128', '64', '768', '768', '128'] lie: -31.455337974107085
+2022-08-06 18:49:46|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 1, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'}
+2022-08-06 18:49:46|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 00:53:13.78
+2022-08-06 19:20:03|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 1, "p1": "64", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "128"} --> -6.884522283924249
+2022-08-06 19:20:03|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 1, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} y: -6.884522283924249
+2022-08-06 19:20:03|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:20:03|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 1, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} --> (1, '64', '128', '64', '768', '768', '128'): evaluated objective: -6.884522283924249
+2022-08-06 19:20:04|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:20:05|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [14, '64', '128', '64', '192', '768', '384'] lie: -6.884522283924249
+2022-08-06 19:20:05|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '384'}
+2022-08-06 19:20:05|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:23:32.83
+2022-08-06 19:27:13|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 14, "p1": "64", "p2": "128", "p3": "64", "p4": "192", "p5": "768", "p6": "384"} --> -48.061630218687874
+2022-08-06 19:27:13|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '384'} y: -48.061630218687874
+2022-08-06 19:27:13|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:27:13|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '384'} --> (14, '64', '128', '64', '192', '768', '384'): evaluated objective: -48.061630218687874
+2022-08-06 19:27:14|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:27:15|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [21, '64', '128', '192', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 19:27:15|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 21, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 19:27:15|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:30:42.46
+2022-08-06 19:34:01|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 21, "p1": "64", "p2": "128", "p3": "192", "p4": "768", "p5": "768", "p6": "192"} --> -47.31845762380113
+2022-08-06 19:34:01|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 21, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'} y: -47.31845762380113
+2022-08-06 19:34:01|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:34:01|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 21, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'} --> (21, '64', '128', '192', '768', '768', '192'): evaluated objective: -47.31845762380113
+2022-08-06 19:34:02|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:34:03|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [25, '64', '128', '192', '768', '192', '192'] lie: -6.884522283924249
+2022-08-06 19:34:03|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '192', 'p6': '192'}
+2022-08-06 19:34:03|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:37:30.46
+2022-08-06 19:41:10|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 25, "p1": "64", "p2": "128", "p3": "192", "p4": "768", "p5": "192", "p6": "192"} --> -47.06054117189021
+2022-08-06 19:41:10|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '192', 'p6': '192'} y: -47.06054117189021
+2022-08-06 19:41:10|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:41:10|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '192', 'p4': '768', 'p5': '192', 'p6': '192'} --> (25, '64', '128', '192', '768', '192', '192'): evaluated objective: -47.06054117189021
+2022-08-06 19:41:11|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:41:12|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [24, '64', '128', '64', '512', '128', '192'] lie: -6.884522283924249
+2022-08-06 19:41:12|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 24, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '128', 'p6': '192'}
+2022-08-06 19:41:12|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:44:39.04
+2022-08-06 19:48:07|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 24, "p1": "64", "p2": "128", "p3": "64", "p4": "512", "p5": "128", "p6": "192"} --> -49.252302175861786
+2022-08-06 19:48:07|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 24, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '128', 'p6': '192'} y: -49.252302175861786
+2022-08-06 19:48:07|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:48:07|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 24, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '128', 'p6': '192'} --> (24, '64', '128', '64', '512', '128', '192'): evaluated objective: -49.252302175861786
+2022-08-06 19:48:08|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:48:09|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [25, '64', '128', '64', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 19:48:09|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 19:48:09|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:51:36.13
+2022-08-06 19:55:04|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 25, "p1": "64", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "192"} --> -49.18266247571383
+2022-08-06 19:55:04|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} y: -49.18266247571383
+2022-08-06 19:55:04|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 19:55:04|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 25, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} --> (25, '64', '128', '64', '768', '768', '192'): evaluated objective: -49.18266247571383
+2022-08-06 19:55:04|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 19:55:05|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [17, '64', '128', '128 ', '1024', '768', '192'] lie: -6.884522283924249
+2022-08-06 19:55:05|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 17, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '1024', 'p5': '768', 'p6': '192'}
+2022-08-06 19:55:05|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 01:58:32.89
+2022-08-06 20:01:54|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 17, "p1": "64", "p2": "128", "p3": "128 ", "p4": "1024", "p5": "768", "p6": "192"} --> -50.27032647119983
+2022-08-06 20:01:54|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 17, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '1024', 'p5': '768', 'p6': '192'} y: -50.27032647119983
+2022-08-06 20:01:54|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:01:54|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 17, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '1024', 'p5': '768', 'p6': '192'} --> (17, '64', '128', '128 ', '1024', '768', '192'): evaluated objective: -50.27032647119983
+2022-08-06 20:01:55|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:01:56|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [21, '64', '192', '192', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:01:56|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 21, 'p1': '64', 'p2': '192', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:01:56|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:05:23.33
+2022-08-06 20:09:00|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 21, "p1": "64", "p2": "192", "p3": "192", "p4": "768", "p5": "768", "p6": "192"} --> -47.383379067032536
+2022-08-06 20:09:00|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 21, 'p1': '64', 'p2': '192', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'} y: -47.383379067032536
+2022-08-06 20:09:00|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:09:00|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 21, 'p1': '64', 'p2': '192', 'p3': '192', 'p4': '768', 'p5': '768', 'p6': '192'} --> (21, '64', '192', '192', '768', '768', '192'): evaluated objective: -47.383379067032536
+2022-08-06 20:09:01|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:09:02|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [14, '64', '128', '128 ', '128', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:09:02|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '128', 'p5': '768', 'p6': '192'}
+2022-08-06 20:09:02|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:12:29.18
+2022-08-06 20:16:16|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 14, "p1": "64", "p2": "128", "p3": "128 ", "p4": "128", "p5": "768", "p6": "192"} --> -46.15751789976134
+2022-08-06 20:16:16|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '128', 'p5': '768', 'p6': '192'} y: -46.15751789976134
+2022-08-06 20:16:16|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:16:16|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 14, 'p1': '64', 'p2': '128', 'p3': '128 ', 'p4': '128', 'p5': '768', 'p6': '192'} --> (14, '64', '128', '128 ', '128', '768', '192'): evaluated objective: -46.15751789976134
+2022-08-06 20:16:17|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:16:18|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [8, '64', '128', '64', '512', '1024', '192'] lie: -6.884522283924249
+2022-08-06 20:16:18|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 8, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '1024', 'p6': '192'}
+2022-08-06 20:16:18|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:19:45.81
+2022-08-06 20:23:38|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 8, "p1": "64", "p2": "128", "p3": "64", "p4": "512", "p5": "1024", "p6": "192"} --> -46.49038461538461
+2022-08-06 20:23:38|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 8, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '1024', 'p6': '192'} y: -46.49038461538461
+2022-08-06 20:23:38|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:23:38|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 8, 'p1': '64', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '1024', 'p6': '192'} --> (8, '64', '128', '64', '512', '1024', '192'): evaluated objective: -46.49038461538461
+2022-08-06 20:23:39|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:23:40|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [17, '64', '0', '64', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:23:40|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 17, 'p1': '64', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:23:40|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:27:7.78
+2022-08-06 20:30:20|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 17, "p1": "64", "p2": "0", "p3": "64", "p4": "768", "p5": "768", "p6": "192"} --> -49.72949622528953
+2022-08-06 20:30:20|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 17, 'p1': '64', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} y: -49.72949622528953
+2022-08-06 20:30:20|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:30:20|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 17, 'p1': '64', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} --> (17, '64', '0', '64', '768', '768', '192'): evaluated objective: -49.72949622528953
+2022-08-06 20:30:21|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:30:22|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [13, '0', '192', '64', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:30:22|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 13, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:30:22|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:33:49.77
+2022-08-06 20:37:19|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 13, "p1": "0", "p2": "192", "p3": "64", "p4": "768", "p5": "768", "p6": "192"} --> -50.49344681739857
+2022-08-06 20:37:19|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 13, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} y: -50.49344681739857
+2022-08-06 20:37:19|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:37:19|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 13, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} --> (13, '0', '192', '64', '768', '768', '192'): evaluated objective: -50.49344681739857
+2022-08-06 20:37:20|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:37:21|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [19, '64', '64', '64', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:37:21|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 19, 'p1': '64', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:37:21|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:40:47.97
+2022-08-06 20:44:09|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 19, "p1": "64", "p2": "64", "p3": "64", "p4": "768", "p5": "768", "p6": "192"} --> -49.530307221078296
+2022-08-06 20:44:09|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 19, 'p1': '64', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} y: -49.530307221078296
+2022-08-06 20:44:09|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:44:09|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 19, 'p1': '64', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} --> (19, '64', '64', '64', '768', '768', '192'): evaluated objective: -49.530307221078296
+2022-08-06 20:44:10|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:44:11|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [13, '256', '0', '256', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:44:11|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 13, 'p1': '256', 'p2': '0', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:44:11|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:47:38.67
+2022-08-06 20:51:27|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 13, "p1": "256", "p2": "0", "p3": "256", "p4": "768", "p5": "768", "p6": "192"} --> -40.71921846050194
+2022-08-06 20:51:27|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 13, 'p1': '256', 'p2': '0', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '192'} y: -40.71921846050194
+2022-08-06 20:51:27|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:51:27|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 13, 'p1': '256', 'p2': '0', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '192'} --> (13, '256', '0', '256', '768', '768', '192'): evaluated objective: -40.71921846050194
+2022-08-06 20:51:28|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:51:29|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '128', '256', '64', '256', '1024', '192'] lie: -6.884522283924249
+2022-08-06 20:51:29|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '1024', 'p6': '192'}
+2022-08-06 20:51:29|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 02:54:56.50
+2022-08-06 20:58:33|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "128", "p2": "256", "p3": "64", "p4": "256", "p5": "1024", "p6": "192"} --> -46.41451473552846
+2022-08-06 20:58:33|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '1024', 'p6': '192'} y: -46.41451473552846
+2022-08-06 20:58:33|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 20:58:33|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '1024', 'p6': '192'} --> (12, '128', '256', '64', '256', '1024', '192'): evaluated objective: -46.41451473552846
+2022-08-06 20:58:34|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 20:58:35|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '128', '192', '64', '768', '768', '192'] lie: -6.884522283924249
+2022-08-06 20:58:35|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'}
+2022-08-06 20:58:35|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:02:2.16
+2022-08-06 21:05:21|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "128", "p2": "192", "p3": "64", "p4": "768", "p5": "768", "p6": "192"} --> -49.21169681116348
+2022-08-06 21:05:21|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} y: -49.21169681116348
+2022-08-06 21:05:21|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:05:21|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '192'} --> (12, '128', '192', '64', '768', '768', '192'): evaluated objective: -49.21169681116348
+2022-08-06 21:05:22|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:05:23|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '0', '256', '64', '256', '512', '192'] lie: -6.884522283924249
+2022-08-06 21:05:23|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '0', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '512', 'p6': '192'}
+2022-08-06 21:05:23|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:08:50.06
+2022-08-06 21:12:14|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "0", "p2": "256", "p3": "64", "p4": "256", "p5": "512", "p6": "192"} --> -47.79084708905802
+2022-08-06 21:12:14|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '0', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '512', 'p6': '192'} y: -47.79084708905802
+2022-08-06 21:12:14|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:12:14|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '0', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '512', 'p6': '192'} --> (12, '0', '256', '64', '256', '512', '192'): evaluated objective: -47.79084708905802
+2022-08-06 21:12:15|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:12:16|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '256', '192', '64', '768', '512', '192'] lie: -6.884522283924249
+2022-08-06 21:12:16|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '256', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '512', 'p6': '192'}
+2022-08-06 21:12:16|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:15:43.74
+2022-08-06 21:19:35|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "256", "p2": "192", "p3": "64", "p4": "768", "p5": "512", "p6": "192"} --> -42.05444898669218
+2022-08-06 21:19:35|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '256', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '512', 'p6': '192'} y: -42.05444898669218
+2022-08-06 21:19:35|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:19:35|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '256', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '512', 'p6': '192'} --> (12, '256', '192', '64', '768', '512', '192'): evaluated objective: -42.05444898669218
+2022-08-06 21:19:36|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:19:37|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [19, '128', '192', '64', '768', '768', '512'] lie: -6.884522283924249
+2022-08-06 21:19:37|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 19, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '512'}
+2022-08-06 21:19:37|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:23:4.58
+2022-08-06 21:26:15|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 19, "p1": "128", "p2": "192", "p3": "64", "p4": "768", "p5": "768", "p6": "512"} --> -49.93957672722766
+2022-08-06 21:26:15|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 19, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '512'} y: -49.93957672722766
+2022-08-06 21:26:15|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:26:15|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 19, 'p1': '128', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '512'} --> (19, '128', '192', '64', '768', '768', '512'): evaluated objective: -49.93957672722766
+2022-08-06 21:26:17|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:26:18|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [17, '192', '256', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 21:26:18|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 17, 'p1': '192', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 21:26:18|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:29:44.95
+2022-08-06 21:33:06|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 17, "p1": "192", "p2": "256", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -48.99328178990141
+2022-08-06 21:33:06|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 17, 'p1': '192', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -48.99328178990141
+2022-08-06 21:33:06|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:33:06|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 17, 'p1': '192', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (17, '192', '256', '64', '768', '768', '384'): evaluated objective: -48.99328178990141
+2022-08-06 21:33:07|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:33:08|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [18, '64', '192', '64', '768', '768', '256'] lie: -6.884522283924249
+2022-08-06 21:33:08|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 18, 'p1': '64', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'}
+2022-08-06 21:33:08|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:36:35.17
+2022-08-06 21:40:08|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 18, "p1": "64", "p2": "192", "p3": "64", "p4": "768", "p5": "768", "p6": "256"} --> -49.38662526429761
+2022-08-06 21:40:08|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 18, 'p1': '64', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'} y: -49.38662526429761
+2022-08-06 21:40:08|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:40:08|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 18, 'p1': '64', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'} --> (18, '64', '192', '64', '768', '768', '256'): evaluated objective: -49.38662526429761
+2022-08-06 21:40:10|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:40:11|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [18, '128', '64', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 21:40:11|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 18, 'p1': '128', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 21:40:11|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:43:37.92
+2022-08-06 21:47:01|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 18, "p1": "128", "p2": "64", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -50.1904850881837
+2022-08-06 21:47:01|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 18, 'p1': '128', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -50.1904850881837
+2022-08-06 21:47:01|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:47:01|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 18, 'p1': '128', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (18, '128', '64', '64', '768', '768', '384'): evaluated objective: -50.1904850881837
+2022-08-06 21:47:02|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:47:03|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '192', '64', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 21:47:03|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 21:47:03|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:50:30.20
+2022-08-06 21:53:59|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "192", "p2": "64", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -48.147779326827326
+2022-08-06 21:53:59|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -48.147779326827326
+2022-08-06 21:53:59|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 21:53:59|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (12, '192', '64', '64', '768', '768', '384'): evaluated objective: -48.147779326827326
+2022-08-06 21:54:00|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 21:54:01|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [18, '128', '256', '64', '768', '768', '768'] lie: -6.884522283924249
+2022-08-06 21:54:01|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 18, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '768'}
+2022-08-06 21:54:01|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 03:57:28.63
+2022-08-06 22:00:41|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 18, "p1": "128", "p2": "256", "p3": "64", "p4": "768", "p5": "768", "p6": "768"} --> -50.550461593149805
+2022-08-06 22:00:41|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 18, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '768'} y: -50.550461593149805
+2022-08-06 22:00:41|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:00:41|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 18, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '768'} --> (18, '128', '256', '64', '768', '768', '768'): evaluated objective: -50.550461593149805
+2022-08-06 22:00:42|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:00:43|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [18, '192', '64', '64', '768', '768', '1024'] lie: -6.884522283924249
+2022-08-06 22:00:43|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 18, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'}
+2022-08-06 22:00:43|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:04:10.50
+2022-08-06 22:07:38|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 18, "p1": "192", "p2": "64", "p3": "64", "p4": "768", "p5": "768", "p6": "1024"} --> -48.692306917630944
+2022-08-06 22:07:38|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 18, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} y: -48.692306917630944
+2022-08-06 22:07:38|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:07:38|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 18, 'p1': '192', 'p2': '64', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} --> (18, '192', '64', '64', '768', '768', '1024'): evaluated objective: -48.692306917630944
+2022-08-06 22:07:39|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:07:40|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [10, '0', '192', '64', '768', '768', '1024'] lie: -6.884522283924249
+2022-08-06 22:07:40|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 10, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'}
+2022-08-06 22:07:40|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:11:7.80
+2022-08-06 22:14:24|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 10, "p1": "0", "p2": "192", "p3": "64", "p4": "768", "p5": "768", "p6": "1024"} --> -50.726538320306354
+2022-08-06 22:14:24|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 10, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} y: -50.726538320306354
+2022-08-06 22:14:24|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:14:24|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 10, 'p1': '0', 'p2': '192', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} --> (10, '0', '192', '64', '768', '768', '1024'): evaluated objective: -50.726538320306354
+2022-08-06 22:14:25|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:14:26|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [17, '128', '128', '64', '192', '768', '768'] lie: -6.884522283924249
+2022-08-06 22:14:26|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 17, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '768'}
+2022-08-06 22:14:26|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:17:53.68
+2022-08-06 22:21:28|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 17, "p1": "128", "p2": "128", "p3": "64", "p4": "192", "p5": "768", "p6": "768"} --> -47.63077529307457
+2022-08-06 22:21:28|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 17, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '768'} y: -47.63077529307457
+2022-08-06 22:21:28|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:21:28|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 17, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '192', 'p5': '768', 'p6': '768'} --> (17, '128', '128', '64', '192', '768', '768'): evaluated objective: -47.63077529307457
+2022-08-06 22:21:29|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:21:30|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '128', '256', '64', '256', '768', '128'] lie: -6.884522283924249
+2022-08-06 22:21:30|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '768', 'p6': '128'}
+2022-08-06 22:21:30|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:24:57.48
+2022-08-06 22:28:46|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "128", "p2": "256", "p3": "64", "p4": "256", "p5": "768", "p6": "128"} --> -45.369240874542555
+2022-08-06 22:28:46|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '768', 'p6': '128'} y: -45.369240874542555
+2022-08-06 22:28:46|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:28:46|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '128', 'p2': '256', 'p3': '64', 'p4': '256', 'p5': '768', 'p6': '128'} --> (12, '128', '256', '64', '256', '768', '128'): evaluated objective: -45.369240874542555
+2022-08-06 22:28:47|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:28:48|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [16, '128', '128', '64', '768', '768', '256'] lie: -6.884522283924249
+2022-08-06 22:28:48|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 16, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'}
+2022-08-06 22:28:48|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:32:15.54
+2022-08-06 22:35:42|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 16, "p1": "128", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "256"} --> -49.69882614147976
+2022-08-06 22:35:42|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 16, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'} y: -49.69882614147976
+2022-08-06 22:35:42|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:35:42|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 16, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '256'} --> (16, '128', '128', '64', '768', '768', '256'): evaluated objective: -49.69882614147976
+2022-08-06 22:35:43|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:35:44|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [19, '64', '256', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 22:35:44|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 19, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 22:35:44|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:39:11.02
+2022-08-06 22:42:38|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 19, "p1": "64", "p2": "256", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -50.08598006919841
+2022-08-06 22:42:38|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 19, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -50.08598006919841
+2022-08-06 22:42:38|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:42:38|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 19, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (19, '64', '256', '64', '768', '768', '384'): evaluated objective: -50.08598006919841
+2022-08-06 22:42:39|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:42:40|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '64', '256', '128 ', '768', '768', '768'] lie: -6.884522283924249
+2022-08-06 22:42:40|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '64', 'p2': '256', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '768'}
+2022-08-06 22:42:40|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:46:7.55
+2022-08-06 22:49:41|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "64", "p2": "256", "p3": "128 ", "p4": "768", "p5": "768", "p6": "768"} --> -50.170173909434276
+2022-08-06 22:49:41|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '64', 'p2': '256', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '768'} y: -50.170173909434276
+2022-08-06 22:49:41|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:49:41|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '64', 'p2': '256', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '768'} --> (12, '64', '256', '128 ', '768', '768', '768'): evaluated objective: -50.170173909434276
+2022-08-06 22:49:42|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:49:43|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '0', '192', '256', '768', '768', '256'] lie: -6.884522283924249
+2022-08-06 22:49:43|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '0', 'p2': '192', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '256'}
+2022-08-06 22:49:43|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 04:53:10.85
+2022-08-06 22:56:35|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "0", "p2": "192", "p3": "256", "p4": "768", "p5": "768", "p6": "256"} --> -48.11424022290775
+2022-08-06 22:56:35|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '0', 'p2': '192', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '256'} y: -48.11424022290775
+2022-08-06 22:56:35|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 22:56:35|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '0', 'p2': '192', 'p3': '256', 'p4': '768', 'p5': '768', 'p6': '256'} --> (12, '0', '192', '256', '768', '768', '256'): evaluated objective: -48.11424022290775
+2022-08-06 22:56:36|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 22:56:37|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '0', '128', '64', '768', '768', '1024'] lie: -6.884522283924249
+2022-08-06 22:56:37|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'}
+2022-08-06 22:56:37|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:00:4.54
+2022-08-06 23:03:21|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "0", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "1024"} --> -51.57883507574142
+2022-08-06 23:03:21|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} y: -51.57883507574142
+2022-08-06 23:03:21|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:03:21|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} --> (12, '0', '128', '64', '768', '768', '1024'): evaluated objective: -51.57883507574142
+2022-08-06 23:03:22|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:03:23|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [13, '192', '128', '64', '768', '768', '128'] lie: -6.884522283924249
+2022-08-06 23:03:23|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 13, 'p1': '192', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'}
+2022-08-06 23:03:23|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:06:50.83
+2022-08-06 23:10:31|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 13, "p1": "192", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "128"} --> -47.673042792348646
+2022-08-06 23:10:31|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 13, 'p1': '192', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} y: -47.673042792348646
+2022-08-06 23:10:31|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:10:31|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 13, 'p1': '192', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} --> (13, '192', '128', '64', '768', '768', '128'): evaluated objective: -47.673042792348646
+2022-08-06 23:10:32|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:10:33|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [12, '128', '128', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 23:10:33|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 12, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 23:10:33|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:14:0.49
+2022-08-06 23:17:32|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 12, "p1": "128", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -49.97106122617719
+2022-08-06 23:17:32|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 12, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -49.97106122617719
+2022-08-06 23:17:32|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:17:32|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 12, 'p1': '128', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (12, '128', '128', '64', '768', '768', '384'): evaluated objective: -49.97106122617719
+2022-08-06 23:17:33|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:17:34|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [30, '64', '256', '64', '768', '768', '128'] lie: -6.884522283924249
+2022-08-06 23:17:34|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 30, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'}
+2022-08-06 23:17:34|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:21:1.26
+2022-08-06 23:24:37|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 30, "p1": "64", "p2": "256", "p3": "64", "p4": "768", "p5": "768", "p6": "128"} --> -47.79557137208383
+2022-08-06 23:24:37|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 30, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} y: -47.79557137208383
+2022-08-06 23:24:37|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:24:37|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 30, 'p1': '64', 'p2': '256', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '128'} --> (30, '64', '256', '64', '768', '768', '128'): evaluated objective: -47.79557137208383
+2022-08-06 23:24:38|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:24:39|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [11, '0', '128', '64', '768', '768', '384'] lie: -6.884522283924249
+2022-08-06 23:24:39|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 11, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'}
+2022-08-06 23:24:39|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:28:6.66
+2022-08-06 23:31:38|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 11, "p1": "0", "p2": "128", "p3": "64", "p4": "768", "p5": "768", "p6": "384"} --> -50.7041958115293
+2022-08-06 23:31:38|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 11, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} y: -50.7041958115293
+2022-08-06 23:31:38|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:31:38|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 11, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '384'} --> (11, '0', '128', '64', '768', '768', '384'): evaluated objective: -50.7041958115293
+2022-08-06 23:31:40|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:31:41|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [19, '0', '128', '64', '512', '768', '128'] lie: -6.884522283924249
+2022-08-06 23:31:41|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 19, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '768', 'p6': '128'}
+2022-08-06 23:31:41|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:35:7.98
+2022-08-06 23:38:27|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 19, "p1": "0", "p2": "128", "p3": "64", "p4": "512", "p5": "768", "p6": "128"} --> -50.18683828108781
+2022-08-06 23:38:27|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 19, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '768', 'p6': '128'} y: -50.18683828108781
+2022-08-06 23:38:27|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:38:27|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 19, 'p1': '0', 'p2': '128', 'p3': '64', 'p4': '512', 'p5': '768', 'p6': '128'} --> (19, '0', '128', '64', '512', '768', '128'): evaluated objective: -50.18683828108781
+2022-08-06 23:38:28|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:38:29|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [16, '0', '128', '128 ', '768', '768', '128'] lie: -6.884522283924249
+2022-08-06 23:38:29|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 16, 'p1': '0', 'p2': '128', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '128'}
+2022-08-06 23:38:29|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:41:56.90
+2022-08-06 23:45:21|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 16, "p1": "0", "p2": "128", "p3": "128 ", "p4": "768", "p5": "768", "p6": "128"} --> -51.28993932193321
+2022-08-06 23:45:21|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 16, 'p1': '0', 'p2': '128', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '128'} y: -51.28993932193321
+2022-08-06 23:45:21|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:45:21|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 16, 'p1': '0', 'p2': '128', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '128'} --> (16, '0', '128', '128 ', '768', '768', '128'): evaluated objective: -51.28993932193321
+2022-08-06 23:45:22|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:45:23|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [11, '0', '0', '64', '768', '768', '1024'] lie: -6.884522283924249
+2022-08-06 23:45:23|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 11, 'p1': '0', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'}
+2022-08-06 23:45:24|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:48:50.91
+2022-08-06 23:52:07|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 11, "p1": "0", "p2": "0", "p3": "64", "p4": "768", "p5": "768", "p6": "1024"} --> -50.88563099234874
+2022-08-06 23:52:07|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 11, 'p1': '0', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} y: -50.88563099234874
+2022-08-06 23:52:07|34885|INFO|ytopt.search.hps.ambs:111] Refitting model with batch of 1 evals
+2022-08-06 23:52:07|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:140] tell: {'p0': 11, 'p1': '0', 'p2': '0', 'p3': '64', 'p4': '768', 'p5': '768', 'p6': '1024'} --> (11, '0', '0', '64', '768', '768', '1024'): evaluated objective: -50.88563099234874
+2022-08-06 23:52:08|34885|INFO|ytopt.search.hps.ambs:113] Drawing 1 points with strategy cl_max
+2022-08-06 23:52:09|34885|DEBUG|ytopt.search.hps.optimizer.optimizer:105] _ask: [19, '0', '64', '128 ', '768', '768', '128'] lie: -6.884522283924249
+2022-08-06 23:52:09|34885|INFO|ytopt.evaluator.evaluate:106] Submitted new eval of {'p0': 19, 'p1': '0', 'p2': '64', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '128'}
+2022-08-06 23:52:09|34885|INFO|ytopt.search.hps.ambs:104] Elapsed time: 05:55:36.56
+2022-08-06 23:56:31|34885|ERROR|ytopt.evaluator.subprocess_evaluator:50] Eval failed:
+2022-08-06 23:56:31|34885|INFO|ytopt.evaluator.evaluate:201] New eval finished: {"p0": 19, "p1": "0", "p2": "64", "p3": "128 ", "p4": "768", "p5": "768", "p6": "128"} --> 0.0
+2022-08-06 23:56:31|34885|INFO|ytopt.evaluator.evaluate:212] Requested eval x: {'p0': 19, 'p1': '0', 'p2': '64', 'p3': '128 ', 'p4': '768', 'p5': '768', 'p6': '128'} y: 0.0
+2022-08-06 23:56:31|34885|INFO|ytopt.search.hps.ambs:120] Hyperopt driver finishing

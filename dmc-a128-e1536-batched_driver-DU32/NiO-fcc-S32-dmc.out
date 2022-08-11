@@ -1,0 +1,750 @@
+  Input file(s): NiO-fcc-S32-dmc.xml 
+
+=====================================================
+                    QMCPACK 3.14.0
+
+       (c) Copyright 2003-  QMCPACK developers
+
+                    Please cite:
+ J. Kim et al. J. Phys. Cond. Mat. 30 195901 (2018)
+      https://doi.org/10.1088/1361-648X/aab9c3
+=====================================================
+  Global options 
+
+  Built without MPI. Running in serial or with OMP threads.
+
+  Total number of MPI ranks = 1
+  Number of MPI groups      = 1
+  MPI group ID              = 0
+  Number of ranks in group  = 1
+  MPI ranks per node        = 1
+  Accelerators per node     = 1
+  OMP 1st level threads     = 8
+  OMP nested threading disabled or only 1 thread on the 2nd level
+
+  Precision used in this calculation, see definitions in the manual:
+  Base precision      = double
+  Full precision      = double
+
+  OpenMP target offload to accelerators build option is enabled
+  CUDA acceleration build option is enabled
+  Timer build option is enabled. Current timer level is coarse
+
+  Input XML = NiO-fcc-S32-dmc.xml
+
+  Project = NiO-fcc-S32-dmc
+  date    = 2022-08-08 19:21:08 UTC
+  host    = gpu07
+
+
+ Random Number
+ -------------
+  Offset for the random number seeds from input file (mod 1024): 2
+
+  Range of prime numbers to use as seeds over processors and threads = 7-37
+
+
+ Lattice
+ -------
+  Simulation cell radius   = 9.728641 bohr
+  Wigner-Seitz cell radius = 10.046471 bohr
+
+  Overwriting global supercell 
+  Long-range breakup parameters:
+    rc*kc = 15.000000; rc = 9.728641; kc = 1.541839; tol = 0.000300
+  KContainer initialised with cutoff 1.541839
+   # of K-shell  = 76
+   # of K points = 480
+
+  Lattice (bohr):     11.8216500000      3.9405500000     15.7622000000
+                      11.8216500000      3.9405500000    -15.7622000000
+                      -3.9405500000     19.7027500000      0.0000000000
+
+  Boundary Conditions:  p  p  p 
+
+  Volume (bohr^3) = 7832.1409940117
+
+  Reciprocal vectors without 2*pi.
+    g_1 =       0.0396518253      0.0079303651      0.0317214602
+    g_2 =       0.0396518253      0.0079303651     -0.0317214602
+    g_3 =      -0.0158607301      0.0475821903     -0.0000000000
+
+  Metric tensor in real-space.
+    h_1 = 403.7262918650 -93.1676058150 31.0558686050 
+    h_2 = -93.1676058150 403.7262918650 31.0558686050 
+    h_3 = 31.0558686050 31.0558686050 403.7262918650 
+
+  Metric tensor in g-space.
+    h_1 = 0.1042786465 0.0248282492 -0.0099312997 
+    h_2 = 0.0248282492 0.1042786465 -0.0099312997 
+    h_3 = -0.0099312997 -0.0099312997 0.0993129967 
+
+ Particle Set
+ ------------
+  Name: i   Offload : yes
+
+  All the species have the same mass 1.0000000000
+
+  Creating Structure Factor for periodic systems 1.5418391861
+  Particle set size: 128   Groups : 2
+
+
+ Particle Set
+ ------------
+  Name: e   Offload : yes
+
+  All the species have the same mass 1.0000000000
+
+  Creating Structure Factor for periodic systems 1.5418391861
+  Particle set size: 1536   Groups : 2
+
+
+ Many-body wavefunction
+ -------------------
+  Name: psi0   Tasking: no
+
+WARNING !!!!!!! Deprecated input style: creating SPO set inside determinantset. Support for this usage will soon be removed. SPO sets should be built outside using sposet_collection.
+  Created SPOSet builder named 'einspline' of type einspline
+
+   Single Slater determinant
+   -------------------------
+
+     Determinant
+     -----------
+      Name: updet   Spin group: 0   SPO name: updet
+
+WARNING !!!!!!! Deprecated input style: creating SPO set inside determinantset. Support for this usage will soon be removed. SPO sets should be built outside using sposet_collection.
+      Create a new SPO set updet
+
+     Single particle orbitals (SPO)
+     ------------------------------
+      Name: updet   Type: spline   Builder class name: EinsplineSetBuilder
+
+  TileMatrix = 
+ [  2 -1  1
+    0  1  3
+    1  4 -2 ]
+  Reading 768 orbitals from HDF5 file.
+  HDF5 orbital file version 2.1.0
+  Reading orbital file in ESHDF format.
+  ESHDF orbital file version 2.1.0
+  Lattice = 
+    [  3.940550  3.940550  7.881100
+       0.000000  3.940550 -3.940550
+       3.940550  0.000000 -3.940550 ]
+  SuperLattice = 
+    [ 11.821650  3.940550 15.762200
+      11.821650  3.940550 -15.762200
+      -3.940550 19.702750  0.000000 ]
+bands=29, elecs=1536, spins=2, twists=32, muffin tins=0, core states=0
+atomic orbital=0
+Atom type(0) = 8
+Atom type(1) = 8
+Atom type(2) = 28
+Atom type(3) = 28
+   Skip initialization of the density
+TIMER  EinsplineSetBuilder::ReadOrbitalInfo 0.5410461426
+TIMER  EinsplineSetBuilder::BroadcastOrbitalInfo 0.0000011921
+Found 1 distinct supercell twists.
+number of things
+32
+32
+Super twist #0:  [   0.00000   0.00000   0.00000 ]
+WARNING twist attribute exists. twistnum attribute ignored. To prevent this message, remove twistnum from input.
+  Using supercell twist 0:  [   0.00000   0.00000   0.00000]
+Using 1 copies of twist angle [ 0.000,  0.000,  0.000]
+Using 1 copies of twist angle [ 0.000,  0.500,  0.500]
+Using 2 copies of twist angle [ 0.062, -0.156, -0.281]
+Using 2 copies of twist angle [ 0.062,  0.344,  0.219]
+Using 2 copies of twist angle [ 0.125, -0.312,  0.438]
+Using 2 copies of twist angle [ 0.125,  0.188, -0.062]
+Using 2 copies of twist angle [ 0.188, -0.469,  0.156]
+Using 2 copies of twist angle [ 0.188,  0.031, -0.344]
+Using 2 copies of twist angle [ 0.250, -0.125,  0.375]
+Using 2 copies of twist angle [ 0.250,  0.375, -0.125]
+Using 2 copies of twist angle [ 0.312, -0.281,  0.094]
+Using 2 copies of twist angle [ 0.312,  0.219, -0.406]
+Using 2 copies of twist angle [ 0.375, -0.438, -0.188]
+Using 2 copies of twist angle [ 0.375,  0.062,  0.312]
+Using 2 copies of twist angle [ 0.438, -0.094,  0.031]
+Using 2 copies of twist angle [ 0.438,  0.406, -0.469]
+Using 2 copies of twist angle [ 0.500,  0.250,  0.250]
+Using complex splines.
+493 complex-valued orbitals supplied by h5 can be expanded up to 928 SPOs.
+Sorting the bands now:
+We will read 408 distinct complex-valued orbitals from h5.
+There are 0 core states and 408 valence states.
+    Using real valued spline SPOs with complex single precision storage (C2R).
+    Running OpenMP offload code path.
+BandInfoGroup::selectBands bigspace has 493 distinct orbitals 
+BandInfoGroup::selectBands using distinct orbitals [0,408)
+  Number of distinct bands 408
+  First Band index 0
+  First SPO index 0
+  Size of SPOs 768
+  ClassName = SplineC2ROMPTarget
+  Using complex einspline table
+NumDistinctOrbitals 408 numOrbs = 768
+B-spline mesh factor is 0.9000000000
+B-spline mesh size is (112, 66, 66)
+Maxmimum number of Gvecs 36340
+  Using meshsize=               112                66                66
+  vs input meshsize=               112                66                66
+MEMORY 1704 MB allocated for the coefficients in 3D spline orbital representation
+Start transforming plane waves to 3D B-Splines.
+  Time to gather the table = 0.0000040531
+  Time to bcast the table = 0.0000000000
+  SplineSetReader initialize_spline_pio 37.7477221489 sec
+Time spent in creating B-spline SPOs 37.9710638523sec
+      Using rank-32 delayed update
+      Using walker batching.
+      Running on an NVIDIA GPU via CUDA acceleration and OpenMP offload.
+
+
+     Determinant
+     -----------
+      Name: downdet   Spin group: 1   SPO name: downdet
+
+WARNING !!!!!!! Deprecated input style: creating SPO set inside determinantset. Support for this usage will soon be removed. SPO sets should be built outside using sposet_collection.
+      Create a new SPO set downdet
+
+     Single particle orbitals (SPO)
+     ------------------------------
+      Name: downdet   Type: spline   Builder class name: EinsplineSetBuilder
+
+493 complex-valued orbitals supplied by h5 can be expanded up to 928 SPOs.
+Sorting the bands now:
+We will read 408 distinct complex-valued orbitals from h5.
+There are 0 core states and 408 valence states.
+BandInfoGroup::selectBands bigspace has 493 distinct orbitals 
+BandInfoGroup::selectBands using distinct orbitals [0,408)
+  Number of distinct bands 408
+  First Band index 0
+  First SPO index 0
+  Size of SPOs 768
+  ClassName = SplineC2ROMPTarget
+  Using complex einspline table
+NumDistinctOrbitals 408 numOrbs = 768
+B-spline mesh factor is 0.9000000000
+B-spline mesh size is (112, 66, 66)
+Maxmimum number of Gvecs 36340
+  Using meshsize=               112                66                66
+  vs input meshsize=               112                66                66
+MEMORY 1704 MB allocated for the coefficients in 3D spline orbital representation
+Start transforming plane waves to 3D B-Splines.
+  Time to gather the table = 0.0000038147
+  Time to bcast the table = 0.0000000000
+  SplineSetReader initialize_spline_pio 22.1446318626 sec
+Time spent in creating B-spline SPOs 22.3169960976sec
+      Using rank-32 delayed update
+      Using walker batching.
+      Running on an NVIDIA GPU via CUDA acceleration and OpenMP offload.
+
+  Added a fermionic WaveFunctionComponent SlaterDet
+
+   Jastrow
+   -------
+    Name: J2   Type: Two-Body   Function: Bspline
+
+    Running OpenMP offload code path.
+    Radial function for species: u - u
+     Number of parameters: 10
+     Cusp: -0.2500000000
+     Cutoff radius: 5.5727792532
+
+     Name                        Value Type Recompute Use Index
+     ---- ---------------------------- ---- --------- --- -----
+     uu_0                 2.862236e-01    1         1  ON     0
+     uu_1                 1.947737e-01    1         1  ON     1
+     uu_2                 1.319545e-01    1         1  ON     2
+     uu_3                 8.893395e-02    1         1  ON     3
+     uu_4                 5.695576e-02    1         1  ON     4
+     uu_5                 3.565958e-02    1         1  ON     5
+     uu_6                 2.206950e-02    1         1  ON     6
+     uu_7                 1.296086e-02    1         1  ON     7
+     uu_8                 6.601007e-03    1         1  ON     8
+     uu_9                 2.787144e-03    1         1  ON     9
+
+    Radial function for species: u - d
+     Number of parameters: 10
+     Cusp: -0.5
+     Cutoff radius: 5.57278
+
+     Name                        Value Type Recompute Use Index
+     ---- ---------------------------- ---- --------- --- -----
+     ud_0                 3.689310e-01    1         1  ON     0
+     ud_1                 2.226722e-01    1         1  ON     1
+     ud_2                 1.484297e-01    1         1  ON     2
+     ud_3                 9.617039e-02    1         1  ON     3
+     ud_4                 5.918787e-02    1         1  ON     4
+     ud_5                 3.660856e-02    1         1  ON     5
+     ud_6                 2.262412e-02    1         1  ON     6
+     ud_7                 1.322280e-02    1         1  ON     7
+     ud_8                 6.736329e-03    1         1  ON     8
+     ud_9                 2.871931e-03    1         1  ON     9
+
+
+   Jastrow
+   -------
+    Name: J1   Type: One-Body   Function: Bspline
+
+    Running OpenMP offload code path.
+    Radial function for element: O - e
+     Number of parameters: 10
+     Cusp: 0
+     Cutoff radius: 4.82617
+
+     Name                        Value Type Recompute Use Index
+     ---- ---------------------------- ---- --------- --- -----
+      O_0                -2.249113e-01    1         1  ON     0
+      O_1                -1.847495e-01    1         1  ON     1
+      O_2                -1.154814e-01    1         1  ON     2
+      O_3                -4.000123e-02    1         1  ON     3
+      O_4                 1.731711e-02    1         1  ON     4
+      O_5                 5.360132e-02    1         1  ON     5
+      O_6                 5.983041e-02    1         1  ON     6
+      O_7                 3.956000e-02    1         1  ON     7
+      O_8                 1.739980e-02    1         1  ON     8
+      O_9                 5.162164e-03    1         1  ON     9
+
+    Radial function for element: Ni - e
+     Number of parameters: 10
+     Cusp: 0
+     Cutoff radius: 4.82617
+
+     Name                        Value Type Recompute Use Index
+     ---- ---------------------------- ---- --------- --- -----
+     Ni_0                -1.644855e+00    1         1  ON     0
+     Ni_1                -1.470659e+00    1         1  ON     1
+     Ni_2                -1.078894e+00    1         1  ON     2
+     Ni_3                -6.878965e-01    1         1  ON     3
+     Ni_4                -3.907005e-01    1         1  ON     4
+     Ni_5                -1.962103e-01    1         1  ON     5
+     Ni_6                -8.512756e-02    1         1  ON     6
+     Ni_7                -2.752357e-02    1         1  ON     7
+     Ni_8                -4.017983e-03    1         1  ON     8
+     Ni_9                 7.665934e-04    1         1  ON     9
+
+  Adding psi0 TrialWaveFunction to the pool
+  QMCHamiltonian::addOperator Kinetic to H, physical Hamiltonian 
+
+ Hamiltonian and observables
+ ---------------------------
+  Name: h0
+
+
+   Pseudo Potential
+   ----------------
+    Name: PseudoPot   Wavefunction : psi0
+
+
+  Adding pseudopotential for O
+   Linear grid  ri=0 rf=10 npts = 10001
+    ECPComponentBuilder::buildSemiLocalAndLocal 
+WARNING Nrule was not determined from qmcpack input or pseudopotential file. Setting sensible default.
+    Assuming Hartree unit
+   Number of angular momentum channels 2
+   Maximum angular momentum channel 1
+   Creating a Linear Grid Rmax=0.927291
+  Using global grid with delta = 0.001
+   Making L=0 a local potential with a radial cutoff of 9.999
+  Quadrature Nrule: 4
+    Non-local pseudopotential parameters
+    Maximum angular momentum = 1
+    Number of non-local channels = 1
+       l(0)=1
+    Cutoff radius = 0.928
+    Number of spherical integration grid points = 12
+    Spherical grid and weights: 
+                        1                 0                 0       0.08333333333
+                       -1   1.224646799e-16                 0       0.08333333333
+             0.4472135955       0.894427191                 0       0.08333333333
+            -0.4472135955      0.7236067977      0.5257311121       0.08333333333
+             0.4472135955      0.2763932023      0.8506508084       0.08333333333
+            -0.4472135955     -0.2763932023      0.8506508084       0.08333333333
+             0.4472135955     -0.7236067977      0.5257311121       0.08333333333
+            -0.4472135955      -0.894427191   1.095357397e-16       0.08333333333
+             0.4472135955     -0.7236067977     -0.5257311121       0.08333333333
+            -0.4472135955     -0.2763932023     -0.8506508084       0.08333333333
+             0.4472135955      0.2763932023     -0.8506508084       0.08333333333
+            -0.4472135955      0.7236067977     -0.5257311121       0.08333333333
+    Maximum cutoff radius 0.928
+
+  Adding pseudopotential for Ni
+   Linear grid  ri=0 rf=10 npts = 10001
+    ECPComponentBuilder::buildSemiLocalAndLocal 
+WARNING Nrule was not determined from qmcpack input or pseudopotential file. Setting sensible default.
+    Assuming Hartree unit
+   Number of angular momentum channels 3
+   Maximum angular momentum channel 2
+   Creating a Linear Grid Rmax=0.802458
+  Using global grid with delta = 0.001
+   Making L=1 a local potential with a radial cutoff of 9.999
+  Quadrature Nrule: 4
+    Non-local pseudopotential parameters
+    Maximum angular momentum = 2
+    Number of non-local channels = 2
+       l(0)=0
+       l(1)=2
+    Cutoff radius = 0.803
+    Number of spherical integration grid points = 12
+    Spherical grid and weights: 
+                        1                 0                 0       0.08333333333
+                       -1   1.224646799e-16                 0       0.08333333333
+             0.4472135955       0.894427191                 0       0.08333333333
+            -0.4472135955      0.7236067977      0.5257311121       0.08333333333
+             0.4472135955      0.2763932023      0.8506508084       0.08333333333
+            -0.4472135955     -0.2763932023      0.8506508084       0.08333333333
+             0.4472135955     -0.7236067977      0.5257311121       0.08333333333
+            -0.4472135955      -0.894427191   1.095357397e-16       0.08333333333
+             0.4472135955     -0.7236067977     -0.5257311121       0.08333333333
+            -0.4472135955     -0.2763932023     -0.8506508084       0.08333333333
+             0.4472135955      0.2763932023     -0.8506508084       0.08333333333
+            -0.4472135955      0.7236067977     -0.5257311121       0.08333333333
+    Maximum cutoff radius 0.803
+
+  Creating CoulombHandler with the Esler Optimized Breakup. 
+  KContainer initialised with cutoff 9.491633433
+   # of K-shell  = 3480
+   # of K points = 113160
+
+  NUMBER OF OPT_BREAK KVECS = 31026063624
+ finding kc:  1.541839186 , 1.541839186
+  LRBreakp parameter Kc =1.541839186
+    Continuum approximation in k = [9.491633433,616.7356744)
+
+   LR Breakup chi^2 = 6.76534e-17
+   Constant of PBCAB 11626
+  Rcut                9.7286
+  Maximum K shell     75
+  Number of k vectors 480
+    CoulombPBCAB::add 
+ Setting a linear grid=[0,9.7286) number of grid =9729
+    Creating the short-range pseudopotential for species 0
+    Creating the short-range pseudopotential for species 1
+  QMCHamiltonian::addOperator LocalECP to H, physical Hamiltonian 
+
+  Using NonLocalECP potential 
+    Maximum grid on a sphere for NonLocalECPotential: 12
+    Using batched ratio computing in NonLocalECP
+  QMCHamiltonian::addOperator NonLocalECP to H, physical Hamiltonian 
+QMCHamiltonian::addOperatorType added type pseudo named PseudoPot
+
+   Coulomb Potential
+   -----------------
+    Name: IonIon   Type: AA   PBC: yes
+
+    Running OpenMP offload code path.
+  Clone CoulombHandler. 
+   PBCAA self-interaction term -3615.6
+   PBCAA total constant -9428.5
+Checking ion-ion Ewald energy against reference...
+  Check passed.
+  Maximum K shell 75
+  Number of k vectors 480
+  Fixed Coulomb potential for i
+    e-e Madelung Const. =-0.071704472
+    Vtot     =-7657.5359
+  QMCHamiltonian::addOperator IonIon to H, physical Hamiltonian 
+QMCHamiltonian::addOperatorType added type coulomb named IonIon
+
+   Coulomb Potential
+   -----------------
+    Name: ElecElec   Type: AA   PBC: yes
+
+    Running OpenMP offload code path.
+  Clone CoulombHandler. 
+   PBCAA self-interaction term -241.04237
+   PBCAA total constant -6053.8869
+  Maximum K shell 75
+  Number of k vectors 480
+  Fixed Coulomb potential for e
+    e-e Madelung Const. =-0.071704472
+    Vtot     =0
+  QMCHamiltonian::addOperator ElecElec to H, physical Hamiltonian 
+QMCHamiltonian::addOperatorType added type coulomb named ElecElec
+
+  QMCHamiltonian::add2WalkerProperty added
+    5 to P::PropertyList 
+    0 to P::Collectables 
+    starting Index of the observables in P::PropertyList = 9
+ParticleSetPool::randomize 1 ParticleSet.
+<init source="i" target="e">
+</init>
+  Initialization Execution time = 61.53 secs
+=========================================================
+ Summary of QMC systems 
+=========================================================
+ParticleSetPool has: 
+
+  ParticleSet 'e' contains 1536 particles :  u(768) d(768)
+
+    u  2.8243217411e+00  5.0464401467e+00  4.0650929482e+00
+    u  3.3530515809e+00  5.0868845120e+00  4.8489729645e+00
+    u  3.3419458460e+00  4.7333592054e+00  2.7167869024e+00
+    u  7.6545168542e+00  3.8011075618e+00 -1.5536039949e+00
+    u  7.7248158241e+00  5.3284396100e+00 -7.3062108869e-01
+    u  8.2137642565e+00  3.5397663952e+00 -1.4876748579e+00
+    u  3.7024138686e+00  6.3234873422e+00 -4.0043470870e-02
+    u  4.5101772127e+00  9.3325567758e+00  2.3079764912e-01
+    u  3.1378482399e+00  6.7663701586e+00  7.7299207845e-01
+    u  8.0914214803e+00  6.5978055848e+00 -4.8312743161e+00
+    (... and 1526 more particle positions ...)
+
+  Distance table for similar particles (A-A):
+    source/target: e
+    Using structure-of-arrays (SoA) data layout and OpenMP offload
+    Distance computations use general periodic cell in 3D with corner image checks.
+
+  Distance table for dissimilar particles (A-B):
+    source: i  target: e
+    Using structure-of-arrays (SoA) data layout and OpenMP offload
+    Distance computations use general periodic cell in 3D with corner image checks.
+
+
+  ParticleSet 'i' contains 128 particles :  O(64) Ni(64)
+
+    O  3.9405500000e+00  3.9405500000e+00  3.9405500000e+00
+    O  7.8811000000e+00  3.9405500000e+00 -2.2204460493e-16
+    O  3.9405500000e+00  7.8811000000e+00 -2.2204460493e-16
+    O  7.8811000000e+00  7.8811000000e+00 -3.9405500000e+00
+    O  1.1821650000e+01  3.9405500000e+00  1.1821650000e+01
+    O  7.8811000000e+00  7.8811000000e+00  1.1821650000e+01
+    O  1.1821650000e+01  7.8811000000e+00  7.8811000000e+00
+    O  7.8811000000e+00  1.1821650000e+01  7.8811000000e+00
+    O  1.1821650000e+01  1.1821650000e+01  3.9405500000e+00
+    O  1.1821650000e+01  3.9405500000e+00 -3.9405500000e+00
+    (... and 118 more particle positions ...)
+
+  Distance table for similar particles (A-A):
+    source/target: i
+    Using structure-of-arrays (SoA) data layout and OpenMP offload
+    Distance computations use general periodic cell in 3D with corner image checks.
+
+
+  Hamiltonian h0
+  Kinetic         Kinetic energy
+  LocalECP        CoulombPBCAB potential source: i
+  NonLocalECP     NonLocalECPotential: i
+  IonIon          CoulombPBCAA potential: i_i
+  ElecElec        CoulombPBCAA potential: e_e
+
+
+========================================
+  Reading VMC driver XML input section
+========================================
+  Random walking without drift
+
+=========================================================
+  Start VMCBatched
+  File Root NiO-fcc-S32-dmc.s001
+=========================================================
+==============================================================
+--- Memory usage report : VMCBatched before initialization ---
+==============================================================
+Available memory on node 0, free + buffers :  163447 MiB
+Memory footprint by rank 0 on node 0       :    3684 MiB
+Device memory allocated via CUDA allocator :       1 MiB
+Free memory available on default device    :   36332 MiB
+Device memory allocated via OpenMP offload :    3468 MiB
+==============================================================
+VMCBatched Driver running with
+             total_walkers     = 400
+             walkers_per_rank  = [400]
+             num_crowds        = 8
+  on rank 0, walkers_per_crowd = [50(x8)]
+
+===================================================================
+--- Memory usage report : VMCBatched after initialLogEvaluation ---
+===================================================================
+Available memory on node 0, free + buffers :  118812 MiB
+Memory footprint by rank 0 on node 0       :   47568 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4856 MiB
+Device memory allocated via OpenMP offload :   31566 MiB
+===================================================================
+Warm-up is completed!
+=====================================================
+--- Memory usage report : VMCBatched after Warmup ---
+=====================================================
+Available memory on node 0, free + buffers :  118443 MiB
+Memory footprint by rank 0 on node 0       :   47930 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4488 MiB
+Device memory allocated via OpenMP offload :   31872 MiB
+=====================================================
+====================================================
+  End of a VMC block
+    QMC counter        = 1
+    time step          = 1
+    reference energy   = -11862.1
+    reference variance = 420.478
+====================================================
+=============================================
+--- Memory usage report : VMCBatched ends ---
+=============================================
+Available memory on node 0, free + buffers :  118441 MiB
+Memory footprint by rank 0 on node 0       :   47932 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4488 MiB
+Device memory allocated via OpenMP offload :   31872 MiB
+=============================================
+  QMC Execution time = 1.0256e+02 secs
+
+========================================
+  Reading VMC driver XML input section
+========================================
+  Random walking with drift
+
+=========================================================
+  Start VMCBatched
+  File Root NiO-fcc-S32-dmc.s002
+=========================================================
+==============================================================
+--- Memory usage report : VMCBatched before initialization ---
+==============================================================
+Available memory on node 0, free + buffers :  158187 MiB
+Memory footprint by rank 0 on node 0       :   47972 MiB
+Device memory allocated via CUDA allocator :       1 MiB
+Free memory available on default device    :   35480 MiB
+Device memory allocated via OpenMP offload :    3468 MiB
+==============================================================
+VMCBatched Driver running with
+             total_walkers     = 400
+             walkers_per_rank  = [400]
+             num_crowds        = 8
+  on rank 0, walkers_per_crowd = [50(x8)]
+
+===================================================================
+--- Memory usage report : VMCBatched after initialLogEvaluation ---
+===================================================================
+Available memory on node 0, free + buffers :  118257 MiB
+Memory footprint by rank 0 on node 0       :   48126 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4520 MiB
+Device memory allocated via OpenMP offload :   31848 MiB
+===================================================================
+Warm-up is completed!
+=====================================================
+--- Memory usage report : VMCBatched after Warmup ---
+=====================================================
+Available memory on node 0, free + buffers :  118245 MiB
+Memory footprint by rank 0 on node 0       :   48135 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4520 MiB
+Device memory allocated via OpenMP offload :   31872 MiB
+=====================================================
+====================================================
+  End of a VMC block
+    QMC counter        = 2
+    time step          = 1
+    reference energy   = -11867.4
+    reference variance = 511.623
+====================================================
+=============================================
+--- Memory usage report : VMCBatched ends ---
+=============================================
+Available memory on node 0, free + buffers :  118242 MiB
+Memory footprint by rank 0 on node 0       :   48135 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4520 MiB
+Device memory allocated via OpenMP offload :   31872 MiB
+=============================================
+  QMC Execution time = 1.2196e+02 secs
+
+========================================
+  Reading DMC driver XML input section
+========================================
+  Using Non-local T-moves v0, M. Casula, PRB 74, 161102(R) (2006)
+
+=========================================================
+  Start DMCBatched
+  File Root NiO-fcc-S32-dmc.s003
+=========================================================
+==============================================================
+--- Memory usage report : DMCBatched before initialization ---
+==============================================================
+Available memory on node 0, free + buffers :  140055 MiB
+Memory footprint by rank 0 on node 0       :   48135 MiB
+Device memory allocated via CUDA allocator :       1 MiB
+Free memory available on default device    :   35462 MiB
+Device memory allocated via OpenMP offload :    3468 MiB
+==============================================================
+DMCBatched Driver running with
+             total_walkers     = 400
+             walkers_per_rank  = [400]
+             num_crowds        = 8
+  on rank 0, walkers_per_crowd = [50(x8)]
+
+  Creating the branching engine and walker controler
+  WalkerControl parameters 
+    maxCopy = 2
+    Max Walkers per MPI rank 801
+    Min Walkers per MPI rank 81
+    Using non-blocking send/recv
+    Disable branching for debugging as the user input request.
+  Fluctuating population
+  Persistent walkers are killed after 10 MC sweeps
+  BranchInterval = 1
+  Steps per block = 5
+  Number of blocks = 5
+
+  DMC Engine Initialization = 1.4031e-03 secs
+===================================================================
+--- Memory usage report : DMCBatched after initialLogEvaluation ---
+===================================================================
+Available memory on node 0, free + buffers :  110013 MiB
+Memory footprint by rank 0 on node 0       :   56355 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4520 MiB
+Device memory allocated via OpenMP offload :   31848 MiB
+===================================================================
+  START ALL OVER 
+  QMC counter             = -1
+  time step               = 1.0000e-03
+  effective time step     = 1.0000e-03
+  trial energy            = -1.1868e+04
+  reference energy        = -1.1868e+04
+  reference variance      = 5.3727e+02
+  Feedback                = 1.0000e+00
+  target walkers          = 400
+  branching cutoff scheme = classic
+  branch cutoff, max      = 2.5000e+03 3.7500e+03
+  QMC Status (BranchMode) = 0000001101
+====================================================
+  End of a DMC block
+    QMC counter                   = -1
+    time step                     = 0.001
+    effective time step           = 0.000998085
+    trial energy                  = -11869.9
+    reference energy              = -11868.5
+    reference variance            = 537.268
+    target walkers                = 400
+    branch cutoff                 = 2500 3750
+    Feedback                      = 1
+    QMC Status (BranchMode)       = 0000001101
+====================================================
+=============================================
+--- Memory usage report : DMCBatched ends ---
+=============================================
+Available memory on node 0, free + buffers :  109965 MiB
+Memory footprint by rank 0 on node 0       :   56358 MiB
+Device memory allocated via CUDA allocator :     457 MiB
+Free memory available on default device    :    4466 MiB
+Device memory allocated via OpenMP offload :   31930 MiB
+=============================================
+  QMC Execution time = 1.2517e+02 secs
+  Total Execution time = 3.6671e+02 secs
+
+=========================================================
+  A new xml input file : NiO-fcc-S32-dmc.s003.cont.xml
+
+Use --enable-timers=<value> command line option to increase or decrease level of timing information
+Stack timer profile
+Timer         Inclusive_time  Exclusive_time  Calls       Time_per_call
+Total          428.2404     4.1089              1     428.240372181
+  DMCBatched   128.5398   128.5398              1     128.539783955
+  Startup       61.5274    61.5274              1      61.527397871
+  VMCBatched   234.0643   234.0643              2     117.032126427
+
+QMCPACK execution completed successfully
